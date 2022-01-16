@@ -1,0 +1,16 @@
+version: 2
+
+models:
+    - name: dim_address
+      columns:
+        - name: addressid
+          tests:
+            - not_null
+            - unique
+        - name: countryregion
+          tests:
+            - not_null
+        - name: stateprovince
+          tests:
+            - not_null
+        - name: city

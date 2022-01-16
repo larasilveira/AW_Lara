@@ -1,0 +1,13 @@
+version: 2
+
+models:
+    - name: dim_sales_reason
+      columns:
+        - name: salesreasonid
+          tests:
+            - not_null
+            - unique
+        - name: reasontype
+          tests:
+            - not_null
+        - name: reason_name

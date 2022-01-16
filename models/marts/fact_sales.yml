@@ -1,0 +1,31 @@
+version: 2
+
+models:
+    - name: fact_sales
+      columns:
+        - name: salesorderid
+          description: This is a unique identifier of the order
+          tests:
+            - not_null
+        - name: customerid
+          description: This is a unique identifier of the customer
+          tests:
+            - not_null
+        - name: shiptoaddressid
+        - name: onlineorderflag
+        - name: status
+        - name: orderdate
+        - name: subtotal
+          description: This column identifies the total value of the order
+        - name: freight
+          description: This colummn identifies the total value of the freight per order
+        - name: productid
+          description: Unique identifier of the product
+          tests:
+            - not_null
+        - name: orderqty
+          description: It identifies the quantity of each product sold in one order
+        - name: unitprice
+          description: It identifies the unit price of each product sold in one order
+        - name: liqui_value
+          description: This column is the sum of the subtotal of the products considering all discounts

@@ -1,0 +1,11 @@
+version: 2
+
+models:
+    - name: dim_products
+      columns:
+        - name: productid
+          tests:
+            - not_null
+            - unique
+        - name: product_name
+        - name: productcategoryid
