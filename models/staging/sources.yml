@@ -1,0 +1,16 @@
+version: 2
+
+sources: 
+    - name: booming-entity-337621
+      schema: aw_dataset
+      description: This is a replica of the postgres Adventure Works database.
+      tables:
+        - name: customer
+        - name: address
+        - name: salesorderheader
+        - name: salesorderdetail
+        - name: creditcard
+        - name: salesreason
+        - name: product
+        - name: productcategory
+

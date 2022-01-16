@@ -1,0 +1,14 @@
+version: 2
+
+models:
+    - name: dim_customers
+      columns:
+        - name: customerid
+          tests:
+            - not_null
+            - unique
+        - name: companyname
+          tests:
+            - not_null
+        - name: firstname
+        - name: lastname
